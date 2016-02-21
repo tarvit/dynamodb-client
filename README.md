@@ -8,7 +8,9 @@ an environment variable.
 
 Add this line to your application's Gemfile:
 
-```ruby gem 'dynamodb-client' ```
+```ruby
+gem 'dynamodb-client'
+```
 
 And then execute:
 
