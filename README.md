@@ -57,7 +57,7 @@ end
 
 ```ruby
 class MyClass
-  def self.my_method
+  def my_method
     DynamoDB::Client.instance.list_tables
   end
 end
