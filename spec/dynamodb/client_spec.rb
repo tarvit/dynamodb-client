@@ -14,10 +14,10 @@ describe DynamoDB::Client do
   end
 
   before do
-    ENV['AWS_ACCESS_KEY_ID'] = 'development'
-    ENV['AWS_SECRET_ACCESS_KEY'] = 'development'
-    ENV['AWS_REGION'] = 'us-east-1'
-    ENV['AWS_DYNAMODB_ENDPOINT'] = 'http://192.168.99.100:8000/'
+    ENV['AWS_ACCESS_KEY_ID'] ||= 'development'
+    ENV['AWS_SECRET_ACCESS_KEY'] ||= 'development'
+    ENV['AWS_REGION'] ||= 'us-east-1'
+    ENV['AWS_DYNAMODB_ENDPOINT'] ||= 'http://192.168.99.100:8000/'
   end
 
   it 'instantiates the client with extends' do
