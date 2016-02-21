@@ -36,6 +36,8 @@ override the endpoint, this little gem lets you set the endpoint.
 In your code you have 3 options:
 
 ```ruby
+require 'dynamodb/client'
+
 class MyClass
   include DynamoDB::Client
 
@@ -46,6 +48,8 @@ end
 ```
 
 ```ruby
+require 'dynamodb/client'
+
 class MyClass
   extend DynamoDB::Client
 
@@ -56,6 +60,8 @@ end
 ```
 
 ```ruby
+require 'dynamodb/client'
+
 class MyClass
   def my_method
     DynamoDB::Client.instance.list_tables
