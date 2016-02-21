@@ -1,4 +1,5 @@
-# Dynamodb::Client
+[![Gem Version](https://badge.fury.io/rb/dynamodb-client.svg)](https://badge.fury.io/rb/dynamodb-client)
+# DynamoDB::Client
 
 A simple DynamoDB client module that allows you to override the endpoint using
 an environment variable.
