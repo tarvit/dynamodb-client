@@ -40,7 +40,7 @@ class MyClass
   include DynamoDB::Client
 
   def my_method
-    dynamodb_client.get_item(/* API code here */)
+    dynamodb_client.list_tables
   end
 end
 ```
@@ -50,7 +50,7 @@ class MyClass
   extend DynamoDB::Client
 
   def self.my_method
-    dynamodb_client.get_item(/* API code here */)
+    dynamodb_client.list_tables
   end
 end
 ```
@@ -58,7 +58,7 @@ end
 ```ruby
 class MyClass
   def self.my_method
-    DynamoDB::Client.instance.get_item(/* API code here */)
+    DynamoDB::Client.instance.list_tables
   end
 end
 ```
